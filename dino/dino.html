@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Dino 7</title>
+  <link rel="stylesheet" href="styleDino.css">
+
+  <style>
+    .Dino {
+      bottom: -150px;
+      right: 600px;
+      position: relative;
+      height: 180px;
+      width: 188px;
+      background: url("img/dino-sprite2.png") 0 0 no-repeat;
+      animation: correr 0.3s infinite steps(2);
+    }
+
+    .Dinoativo {
+      animation: animationDino 0.5s linear infinite;
+    }
+
+    .DinoEntrada{
+      animation: DinoEntrada-animation 2s linear;
+    }
+
+    @keyframes correr {
+      0% {
+        background-position: 0px;
+      }
+
+      100% {
+        background-position: -369px;
+      }
+    }
+
+    @keyframes animationDino {
+
+      0%,
+      100% {
+        bottom: -120px;
+      }
+
+      40%,
+      50%,
+      60% {
+        bottom: 130px;
+      }
+    }
+
+    @keyframes DinoEntrada-animation{
+      from{
+        right: 100%;
+      }
+      to{
+        right: 8%;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  
+
+  <div class="game-board">
+    <div class="chao"><img src="img/chao2.png" class="chao"></div>
+   
+    <!-- montanha fixa -->
+    <div class="montanhaFixa"><img src="img/montanhaFixa5.png" class="montanhaFixa"></div>
+    <div class="montanhaFixa"><img src="img/montanhaFixa6.png" class="montanhaFixa2"></div>
+    <img src="img/cacto.png" class="cacto4">
+    <img src="img/cacto.png" class="cacto5">
+    <img src="img/cacto.png" class="cacto6">
+    <img src="img/cacto.png" class="cacto7">
+    <img src="img/cacto.png" class="cacto8">
+    <img src="img/cacto.png" class="cacto9">
+    <img src="img/cacto.png" class="cacto10">
+    <img src="img/cacto.png" class="cacto11">
+    <img src="img/cacto.png" class="cacto12">
+    <img src="img/cacto.png" class="cacto13">
+  
+    <!-- nuvens -->
+    <img src="img/unica-nuvem.png" class="nuvem1">
+    <img src="img/unica-nuvem2.png" class="nuvem2">
+    <img src="img/unica-nuvem3.png" class="nuvem3">
+    <img src="img/unica-nuvem4.png" class="nuvem4">
+    <img src="img/unica-nuvem5.png" class="nuvem5">
+
+  
+    <!-- cactos -->
+    <img src="img/cacto.png" class="cacto3">
+    <img src="img/cacto.png" class="cacto14">
+    <img src="img/cacto.png" class="cacto15">
+    <img src="img/cacto.png" class="cacto16">
+    <img src="img/cacto.png" class="cacto17">
+
+    <!-- 1º bloco de montanha -->
+    <div class="montanha2"><img src="img/montanha6.png" class="montanha2"></div>
+    
+    <img src="img/cacto.png" class="cacto2">
+
+    <!-- save dino -->
+    <div class="saveDino"><img src="img/SaveDino5.png" class="saveDino"></div>
+    
+    <img src="img/cacto.png" class="cacto18">
+    <img src="img/cacto.png" class="cacto19">
+
+    <!-- 2º bloco de montanha -->
+    <div class="montanha"><img src="img/montanha7.png" class="montanha1"></div>    
+
+    
+
+    <!-- guarita -->
+    <img src="img/guarita2.png" class="guarita">
+    
+    <!-- cacto -->
+    <img src="img/cacto.png" class="cacto1">
+
+    <canvas class="canvas"></canvas>
+    <div class="Dino"></div>
+
+    <!-- jipe -->
+    <div class="jipe"><img src="img/jipe2.png" class="jipe"></div>
+    
+    <!-- carro2 -->
+    <div class="carro2"><img src="img/carro2.png" class="carro2"></div>
+
+    <!-- carro -->
+    <div class="carro"><img src="img/carro.png" class="carro"></div>
+
+    <!-- score -->
+    <div class="score">Score <b>00</b></div>
+
+    <!-- botão próximo nivel -->
+    <div class="btn"><a href="space/space.html"><button><img src="img/next-level.png" height="55px"></button></a></div>
+    
+
+   <!-- game over -->
+    <div class="gameOver">Game Over
+    Pressione Enter
+    </div>
+
+    <div class="inicio">Pressione Enter</div>
+    
+  </div>
+
+
+  <script src="scriptDino.js"></script>
+
+</body>
+
+</html>

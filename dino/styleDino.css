@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Silkscreen&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+
+.game-board {
+  top: 150px;
+  width: 99%;
+  height: 637px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  /* margin-top: 120px; */
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(161, 161, 161);
+  /* background-color: lightblue; */
+}
+
+.chao {
+  position: absolute;
+  top: 220px;
+  width: 120%;
+}
+
+
+.montanhaFixa {
+  position: absolute;
+  /* top: 30px; */
+  height: 439px;
+  width: 277ch;
+  right: 0px;
+}
+
+.montanhaFixa2 {
+  position: absolute;
+  /* top: 30px; */
+  height: 439px;
+  width: 277ch;
+  right: 150px;
+}
+
+.montanha1 {
+  position: absolute;
+  top: 70px;
+  height: 380px;
+  /* left: 330px; */
+  right: -900px;
+  animation: montanha-animation 95s infinite linear;
+}
+
+@keyframes montanha-animation {
+  from {
+    right: -210%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+
+.montanha2 {
+  position: absolute;
+  top: 30px;
+  height: 380px;
+  /* left: 330px; */
+  right: -900px;
+  animation: montanha2-animation 120s infinite linear;
+}
+
+@keyframes montanha2-animation {
+  from {
+    right: -196%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+.nuvem1 {
+  position: absolute;
+  top: 200px;
+  height: 80px;
+  /* width: 75px; */
+  right: -800px;
+  animation: nuvem1-animation 140s linear infinite;
+}
+
+.nuvem2 {
+  position: absolute;
+  top: 200px;
+  height: 80px;
+  /* width: 75px; */
+  right: -400px;
+  animation: nuvem2-animation 120s linear infinite;
+}
+
+.nuvem3 {
+  position: absolute;
+  top: 125px;
+  height: 80px;
+  /* width: 75px; */
+  right: -150px;
+  animation: nuvem3-animation 100s linear infinite;
+}
+
+.nuvem4 {
+  position: absolute;
+  top: 110px;
+  height: 80px;
+  /* width: 75px; */
+  right: 500px;
+  animation: nuvem4-animation 140s linear infinite;
+}
+
+.nuvem5 {
+  position: absolute;
+  top: 59px;
+  height: 50px;
+  /* width: 75px; */
+  right: 1500px;
+  animation: nuvem5-animation 140s linear infinite;
+}
+
+@keyframes nuvem1-animation {
+  from {
+    right: -135%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+@keyframes nuvem2-animation {
+  from {
+    right: -80%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+@keyframes nuvem3-animation {
+  from {
+    right: -10%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+@keyframes nuvem4-animation {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+@keyframes nuvem5-animation {
+  from {
+    right: -25%;
+  }
+
+  to {
+    right: 100%;
+  }
+
+}
+
+
+.btn {
+  display: none;
+  right: 930px;
+  position: absolute;
+  top: 250px;
+  cursor: pointer;
+  animation: btn-animation 4s linear;
+}
+
+.btnAtivo {
+  animation: btn-animation 4s linear;
+}
+
+@keyframes btn-animation {
+  from {
+    right: -12%;
+  }
+
+  to {
+    right: 46%;
+  }
+}
+
+.score {
+  font-family: 'Silkscreen', cursive;
+  color: black;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 20px;
+}
+
+.inicio {
+  /* display: none; */
+  position: absolute;
+  margin: 0 auto;
+  left: 640px;
+  top: 200px;
+  font-family: 'Silkscreen', cursive;
+  color: #ffff;
+  font-size: 45px;
+  width: 550px;
+  text-align: center;
+}
+
+.gameOver {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  left: 700px;
+  top: 200px;
+  font-family: 'Silkscreen', cursive;
+  color: #ffff;
+  font-size: 45px;
+  width: 550px;
+  text-align: center;
+}
+
+.saveDino {
+  position: absolute;
+  margin: 0 auto;
+  /* left: calc(50% - 181px); */
+  top: calc(50% - 40px);
+  right: -450px;
+  animation: saveDino-animation 60s linear;
+}
+
+@keyframes saveDino-animation {
+  from {
+    right: -50%;
+  }
+
+  to {
+    right: 300%;
+  }
+}
+
+.cacto1 {
+  position: absolute;
+  top: 338px;
+  height: 120px;
+  /* width: ; */
+  right: 1150px;
+  animation: cacto-animation 20s linear infinite;
+}
+
+@keyframes cacto-animation {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.cacto2 {
+  position: absolute;
+  top: 370px;
+  height: 80px;
+  /* width: ; */
+  right: 1100px;
+}
+
+.cacto3 {
+  position: absolute;
+  top: 380px;
+  height: 60px;
+  /* width: ; */
+  right: 800px;
+}
+
+.cacto4 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 960px;
+}
+
+.cacto5 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 980px;
+}
+
+.cacto6 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 580px;
+}
+
+.cacto7 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 600px;
+}
+
+.cacto8 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 1920px;
+}
+
+.cacto9 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 1940px;
+}
+
+.cacto10 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 2400px;
+}
+
+.cacto11 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 2420px;
+}
+
+.cacto12 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 2150px;
+}
+
+.cacto13 {
+  position: absolute;
+  top: 400px;
+  height: 40px;
+  /* width: ; */
+  right: 300px;
+}
+
+.cacto14 {
+  position: absolute;
+  top: 380px;
+  height: 60px;
+  /* width: ; */
+  right: 400px;
+}
+
+.cacto15 {
+  position: absolute;
+  top: 380px;
+  height: 60px;
+  /* width: ; */
+  right: 780px;
+}
+
+.cacto16 {
+  position: absolute;
+  top: 380px;
+  height: 60px;
+  /* width: ; */
+  right: 1700px;
+}
+
+.cacto17 {
+  position: absolute;
+  top: 380px;
+  height: 60px;
+  /* width: ; */
+  right: 2250px;
+}
+
+.cacto18 {
+  position: absolute;
+  top: 370px;
+  height: 80px;
+  /* width: ; */
+  right: 2000px;
+}
+
+.cacto19 {
+  position: absolute;
+  top: 370px;
+  height: 80px;
+  /* width: ; */
+  right: 200px;
+}
+
+.jipe {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  bottom: 50px;
+  right: -100px;
+  /* left: 380px; */
+  /* animation: jipe-animation 2s infinite linear; */
+}
+
+.jipeAtivo {
+  animation: jipe-animation 3s infinite linear;
+}
+
+@keyframes jipe-animation {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.carro {
+  position: absolute;
+  bottom: -3px;
+  height: 230px;
+  width: 230px;
+  left: -250px;
+}
+
+.carroAtivo {
+  animation: carro-animation 22.8s linear infinite;
+}
+
+@keyframes carro-animation {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: -200%;
+  }
+}
+
+.carro2 {
+  position: absolute;
+  bottom: 13px;
+  height: 230px;
+  width: 230px;
+  left: -250px;
+}
+
+.carro2Ativo {
+  animation: carro2-animation 65.6s linear infinite;
+}
+
+@keyframes carro2-animation {
+  from {
+    right: 300%;
+  }
+
+  to {
+    right: -250%;
+  }
+}
+
+.guarita {
+  position: absolute;
+  bottom: 165px;
+  height: 150px;
+  width: 125px;
+  right: 25px;
+  animation: guarita-animation 35s infinite linear;
+}
+
+.guaritaAtiva {
+  animation: guarita-animation 35s infinite linear;
+}
+
+@keyframes guarita-animation {
+  from {
+    right: -200%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes animationDino {
+
+  0%,
+  100% {
+    bottom: 120px;
+  }
+
+  40%,
+  50%,
+  60% {
+    bottom: 260px;
+  }
+}
+
+/* @keyframes portal-animation {
+  /* from {
+    right: -8400%;
+  }
+
+  to {
+    right: 400%;
+  } */
+
+/* from {
+
+    right: -14%;
+  }
+
+  to {
+    right: 100%;
+  }
+} */
+
+/* .dino{
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: 120px;
+  left: 200px;
+}
+
+.dinoAtivo{
+  animation: animationDino 0.5s linear infinite;
+} */
+
+/* .portal {
+  position: absolute;
+  bottom: 120px;
+  height: 200px;
+  width: 200px;
+  right: -900px;
+} */
