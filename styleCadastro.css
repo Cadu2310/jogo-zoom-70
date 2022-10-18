@@ -1,0 +1,75 @@
+
+*{
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  
+  background-image: url(imagens/CAS.png );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+
+.container{
+  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  
+}
+
+.card {
+  
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 1px 0px #00000070
+  
+}
+
+h1{
+  
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272262;
+  
+  
+}
+
+input{
+  
+width:100;
+padding:5px 5px;
+display: inline-block;
+border: 0;
+border-bottom: 2px solid #272262;
+background-color: transparent;
+outline: none;
+min-width: 180px;
+font-size:16px;
+transition: all .3s ease-out;
+border-radius: 0;  
+  
+}
+
+.label-float{
+  
+position: releative;
+padding-top: 13px;
+margin-top: 5%;
+
+  
+}
+
+.label-float input:focus{
+  
+border-bottom: 2px solid #4038a0;
+  
+}
+
